@@ -196,6 +196,24 @@ section {
 }
 
 /* About */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.about-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
 .about-text {
     max-width: 800px;
     margin: 0 auto;
@@ -271,6 +289,24 @@ footer {
     color: var(--white);
     padding: 40px 0;
     text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-link {
+    color: var(--white);
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 /* Responsive Design */
